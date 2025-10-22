@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Product</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 350px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #ff6600;
+            margin-bottom: 25px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #000;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            width: 100%;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff6600;
+        }
+    </style>
+</head>
+<body>
+<div class="form-container">
+    <h2>Update Product</h2>
+    <form id="updateForm">
+        <input type="number" id="id" placeholder="Product ID" required>
+        <input type="text" id="name" placeholder="Updated Name" required>
+        <input type="text" id="department" placeholder="Updated Department" required>
+        <input type="number" step="0.01" id="price" placeholder="Updated Price" required>
+        <button type="submit">Update Product</button>
+    </form>
+</div>
+
+<script src="js/updateproduct.js"></script>
+</body>
+</html>

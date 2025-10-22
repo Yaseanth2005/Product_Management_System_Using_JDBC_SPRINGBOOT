@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Product by ID</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 350px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #000;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #007bff;
+        }
+
+        #result {
+            margin-top: 20px;
+            padding: 10px;
+            background: #eef;
+            border-radius: 6px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>View Product</h2>
+    <form id="viewForm">
+        <input type="number" id="id" placeholder="Enter Product ID" required>
+        <button type="submit">Fetch Product</button>
+    </form>
+    <div id="result"></div>
+</div>
+
+<script src="js/viewproductbyid.js"></script>
+</body>
+</html>
